@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: staging-pays
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    # spec:
+      # imagePullSecrets:
+        # - name: ecr-registry-secret
+      # securityContext:
+      #   fsGroup: 101
+      #   runAsUser: 101
+      #   runAsGroup: 101
+      containers:
+        - name: frontend
+          image: ghcr.io/mikel80/pays-front:v0.1
+          # envFrom:
+          #   - configMapRef:
+          #     name: frontend-configmap
+          ports:
+            - containerPort: 80
+          # securityContext:
+          #   allowPrivilegeEscalation: false
