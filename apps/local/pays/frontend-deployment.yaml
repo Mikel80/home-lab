@@ -12,16 +12,15 @@ spec:
     metadata:
       labels:
         app: frontend
-    # spec:
-      # imagePullSecrets:
-        # - name: ecr-registry-secret
+    spec:
       # securityContext:
       #   fsGroup: 101
       #   runAsUser: 101
       #   runAsGroup: 101
       containers:
         - name: frontend
-          image: ghcr.io/mikel80/pays-front:v0.1
+          image: pays-front:latest-local
+          imagePullPolicy: Never
           # envFrom:
           #   - configMapRef:
           #     name: frontend-configmap

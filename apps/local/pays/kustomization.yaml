@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: pays
 resources:
   - ../../base/pays
+  - frontend-deployment.yaml
   # - tunnel-token.yaml
   # - cloudflare.yaml
   # - aws-credentials.yaml
