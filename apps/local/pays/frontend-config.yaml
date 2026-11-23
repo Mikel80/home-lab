@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: pays
+data:
+  VITE_API_URL: "back-api:8080/api"
