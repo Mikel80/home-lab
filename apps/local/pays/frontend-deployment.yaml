@@ -21,6 +21,12 @@ spec:
         - name: frontend
           image: pays-front:latest-local
           imagePullPolicy: Never
+          env:
+            - name: API_URL
+              valueFrom:
+                configMapRef:
+                  name: front-config
+                  key: vite_api_url
           # envFrom:
           #   - configMapRef:
           #     name: frontend-configmap
