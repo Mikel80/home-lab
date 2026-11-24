@@ -4,7 +4,7 @@ metadata:
   name: postgres
   namespace: pays
 spec:
-  serviceName: postgres
+  serviceName: postgres-service
   replicas: 1
   selector:
     matchLabels:
