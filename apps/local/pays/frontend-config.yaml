@@ -4,4 +4,4 @@ metadata:
   name: frontend-config
   namespace: pays
 data:
-  VITE_API_URL: "backend-service:8080/api"
+  VITE_API_URL: "http://backend-service:3000/api"

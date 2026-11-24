@@ -40,6 +40,6 @@ spec:
                   name: postgres-credentials
                   key: DATABASE_URL
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           # securityContext:
           #   allowPrivilegeEscalation: false
