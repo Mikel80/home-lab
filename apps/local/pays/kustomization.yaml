@@ -9,11 +9,7 @@ resources:
   - backend-config.yaml
   - backend-deployment.yaml
   - backend-service.yaml
-  # - frontend-config.yaml
-  # - frontend-deployment.yaml
+  - frontend-config.yaml
+  - frontend-deployment.yaml
   # - tunnel-token.yaml
   # - cloudflare.yaml
-  # - aws-credentials.yaml
-  # - ecr-token-refresh-sa.yaml
-  # - ecr-token-refresh-rbac.yaml
-  # - ecr-token-refresh-cronjob.yaml

@@ -12,8 +12,6 @@ spec:
     metadata:
       labels:
         app: frontend
-      annotations:
-        reloader.stakater.com/auto: "true"
     spec:
       # securityContext:
       #   fsGroup: 101
