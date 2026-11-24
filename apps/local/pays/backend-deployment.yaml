@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: pays
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+      annotations:
+        reloader.stakater.com/auto: "true"
+    spec:
+      # securityContext:
+      #   fsGroup: 101
+      #   runAsUser: 101
+      #   runAsGroup: 101
+      containers:
+        - name: backend
+          image: pays-back:latest-local
+          imagePullPolicy: Never
+          envFrom:
+            - configMapRef:
+                name: backend-config
+          ports:
+            - containerPort: 80
+          # securityContext:
+          #   allowPrivilegeEscalation: false
