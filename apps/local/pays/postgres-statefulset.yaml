@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: postgres:17-alpine
+          image: postgres:19-trixie
           env:
             - name: POSTGRES_USER
               valueFrom:
