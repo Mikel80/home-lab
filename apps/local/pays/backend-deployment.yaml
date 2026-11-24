@@ -25,7 +25,7 @@ spec:
           command:
             - sh
             - -c
-            - until pg_isready -h postgres -p 5432; do echo "waiting for postgres"; sleep 2; done
+            - until pg_isready -h postgres-service -p 5432; do echo "waiting for postgres"; sleep 2; done
       containers:
         - name: backend
           image: pays-back:latest-local
