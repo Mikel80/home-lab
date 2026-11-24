@@ -4,7 +4,7 @@ namespace: pays
 resources:
   - ../../base/pays
   - backend-config.yaml
-  - backend-deployment.yaml
+  # - backend-deployment.yaml
   - postgres-secret.yaml
   - postgres-service.yaml
   # - postgres-statefulset.yaml
