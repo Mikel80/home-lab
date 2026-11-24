@@ -3,11 +3,11 @@ kind: Kustomization
 namespace: pays
 resources:
   - ../../base/pays
-  - backend-config.yaml
-  # - backend-deployment.yaml
   - postgres-secret.yaml
   - postgres-service.yaml
-  # - postgres-statefulset.yaml
+  - postgres-statefulset.yaml
+  - backend-config.yaml
+  # - backend-deployment.yaml
   # - frontend-config.yaml
   # - frontend-deployment.yaml
   # - tunnel-token.yaml
