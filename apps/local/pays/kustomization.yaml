@@ -8,6 +8,7 @@ resources:
   - postgres-statefulset.yaml
   - backend-config.yaml
   - backend-deployment.yaml
+  - backend-service.yaml
   # - frontend-config.yaml
   # - frontend-deployment.yaml
   # - tunnel-token.yaml
